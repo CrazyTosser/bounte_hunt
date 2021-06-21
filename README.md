@@ -5,6 +5,8 @@
 - rooms - массив объектов комнат с полями id, type (0 - пустая, 1 - сундук, 2 - монстр), rate и exit (true|false)
 - paths - объект вида свойство [id] хранящее массив переходов по порядку (up, down, left, right)
 
+Пример. {"rooms":[{"id":0,"type":0,"exit":false},{"id":1,"type":0,"exit":true}],"paths":{"0":[1,null,null,null],"1":[null,0,null,null]}}
+
 Содержит методы:
 
 - setStartRoom(id) - id стартовой комнаты
