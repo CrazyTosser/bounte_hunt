@@ -65,6 +65,7 @@ class Game {
     }
 
     public function getScore() {
+        setcookie("plaerScore", $this->score, time()+60*60*24*7);
         return $this->score;
     }
 }
